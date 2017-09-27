@@ -1,6 +1,6 @@
 # Azure Functions Demo
 
-This walk-through shows how to use Visual Studio to create an Azure Functions project.
+This walk-through shows how to use Visual Studio to create and run an Azure Functions project.
 
 The sample project includes two different types of Azure Functions and demonstrates:
 - how to trigger a function when an item shows up in a Queue (using a Queue Trigger)
