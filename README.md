@@ -1,6 +1,21 @@
 # Azure Functions Demo
 
-## Setup Functions Project inside Visual Studio
+This walk-through shows how to use Visual Studio to create an Azure Functions project.
+
+The sample project includes two different types of Azure Functions and demonstrates:
+- how to trigger a function when an item shows up in a Queue (using a Queue Trigger)
+- how to trigger a function when a user posts an HTTP request (using an HTTP Trigger)
+- how to configure a local storage queue for testing (using Windows Storage Emulator)
+- how to locally debug an Azure Function
+
+
+The major steps in the tutorial are:
+1. [Setup Functions Project inside Visual Studio](#setupProject)
+2. [Setup Queue (for Queue Trigger)](#setupQueue)
+3. [Test/Debug the Queue Trigger (Locally)](#testQueueTrigger)
+4. [Test the Http Trigger (Locally)](#testHttpTrigger)
+
+## <a name="setupProject"></a> Setup Functions Project inside Visual Studio
 
 ### Option 1: Fetch source from GitHub
 
@@ -29,7 +44,7 @@
 - Update local.settings.json
     - "AzureWebJobsStorage": "UseDevelopmentStorage=true"
 
-## Setup Queue (for Queue Trigger)
+## <a name="setupQueue"></a>Setup Queue (for Queue Trigger)
 
 - Start Azure Storage Emulator
   - From Windows Status bar<br>
@@ -42,7 +57,7 @@
   - Create Queue: "myqueue-items"<br>
 ![Cloud Explorer - Local Queues](Resources/CloudExplorer-LocalQueues.png)
 
-## Test the Queue Trigger (Locally)
+## <a name="testQueueTrigger"></a>Test/Debug the Queue Trigger (Locally)
 
 ### Run Project (in Debug mode)
 
@@ -80,7 +95,7 @@ Execution completes.
 
 - Debug -> Stop Debugging (Shift+F5)
 
-## Test the Http Trigger (Locally)
+## <a name="testHttpTrigger"></a>Test the Http Trigger (Locally)
 
 - Debug -> Start Debugging (F5)<br>
 Functions Terminal Window will start<br>
